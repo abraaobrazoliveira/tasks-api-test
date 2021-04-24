@@ -17,7 +17,6 @@ public class APITest {
     @Test
     public void deveRetornarTarefas() {
         RestAssured.given()
-                    .log().all()
                 .when()
                    .get("/todo")
                 .then()
